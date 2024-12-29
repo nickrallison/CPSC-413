@@ -1,0 +1,51 @@
+\documentclass[7pt]{extarticle}
+\usepackage{graphicx} % http://ctan.org/pkg/graphicx
+\usepackage{subfiles}
+\usepackage{extsizes}
+\usepackage[
+    top=10mm,
+    bottom=20mm,
+    left=10mm,
+    right=10mm,
+    landscape]{geometry}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{esint}
+\usepackage{amsfonts}
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathmorphing}
+\usepackage{verbatim}
+\usepackage{colortbl}
+\usepackage{xcolor}
+\usepackage{mathtools}
+\usepackage{enumitem}
+
+\makeatletter
+\newcommand*{\bigcdot}{\mathpalette\bigcdot@{.5}}
+\newcommand*{\bigcdot@}[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
+
+\title{CPSC 413 Cheatsheet}
+
+\newcommand{\hr}{\centerline{\rule{3.5in}{1pt}}}
+\newcommand{\tab}{\hspace*{6mm}}
+\newcommand{\spacing}{0.3}
+
+\begin{document}
+
+\begin{center}
+\huge{\textbf{CPSC 413 Cheatsheet}}\\
+\end{center}
+\begin{multicols*}{3}
+
+\tikzstyle{mybox} = [draw=black, fill=white, very thick,
+    rectangle, rounded corners, inner sep=10pt, inner ysep=10pt]
+\tikzstyle{fancytitle} =[fill=black, text=white, font=\bfseries]
+
+% Section: Beginning - Summations
+\subfile{sections/beginning/summations}
+
+\end{multicols*}
+\end{document}

@@ -1,0 +1,39 @@
+\begin{tikzpicture}
+    \node [mybox] (box){%
+    \begin{minipage}{0.30\textwidth}
+        \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Summation} & \textbf{Formula} \\
+        \hline
+            $\sum_{k=1}^m k$ & $\frac{m(m+1)}{2}$ \\
+        \hline
+            $\sum_{k=1}^m k^2$ & $\frac{m(m+1)(2m+1)}{6}$ \\
+        \hline
+            $\sum_{k=1}^m k^3$ & $\left(\frac{m(m+1)}{2}\right)^2$ \\
+        \hline
+            $\sum_{k=0}^n z^k$ & $\frac{1 - z^{n+1}}{1 - z}$ \\
+        \hline
+            $\sum_{k=0}^\infty z^k$ & $\frac{1}{1 - z}$ \\
+        \hline
+            $\sum_{k=0}^\infty \frac{z^k}{k!}$ & $e^z$ \\
+        \hline
+            $\sum_{k=1}^\infty \frac{(-1)^{k+1}}{k}$ & $\ln 2$ \\
+        \hline
+            $\sum_{k=0}^\infty \frac{1}{k!}$ & $e$ \\
+        \hline
+            $\sum_{k=1}^\infty \frac{1}{k^2}$ & $\frac{\pi^2}{6}$ \\
+        \hline
+            $\sum_{k=1}^\infty \frac{1}{k^4}$ & $\frac{\pi^4}{90}$ \\
+        \hline
+            $\sum_{k=0}^\infty \binom{\alpha}{k} z^k$ & $(1 + z)^\alpha, \quad |z| < 1$ \\
+        \hline
+            $\sum_{k=0}^n \binom{n}{k}$ & $2^n$ \\
+        \hline
+            $\sum_{k=0}^\infty \frac{(-1)^k z^{2k+1}}{(2k+1)!}$ & $\sin z$ \\
+        \hline
+            $\sum_{k=0}^\infty \frac{(-1)^k z^{2k}}{(2k)!}$ & $\cos z$ \\
+        \hline
+        \end{tabular}
+    \end{minipage} };
+    \node[fancytitle, right=10pt] at (box.north west) {Summations};
+\end{tikzpicture}
